@@ -7,10 +7,6 @@
     font-family: "Rubik", sans-serif;
 } 
 
-html {
-    color: var(--bg-color);
-}
-
 :root {
     --text-color: #fff;
     --color: #2742BB; 
