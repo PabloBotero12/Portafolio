@@ -7,10 +7,6 @@
     font-family: "Rubik", sans-serif;
 } 
 
-html {
-    color: var(--bg-color);
-}
-
 :root {
     --text-color: #fff;
     --color: #2742BB; 
@@ -36,7 +32,7 @@ body.dark-mode {
 
 header {
     background: var(--bg-color);
-    height: 90px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
