@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+    <style>
+        span.LinkedIn {
+            color: #2742BB;
+        } 
+
+        span.WhatsApp {
+            color: green;
+        }
+
+        span.Gmail {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="">Mi <span>Portafolio</span></a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobremi.html">Sobre mi</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="contactame.html">Contacto</a></li>
+                    </ul>
+                    <label class="mode">
+                        <input type="checkbox" checked="checked" id="darkModeButton">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="left">
+                    <div class="animate__animated animate__backInLeft">
+                    <h3>Contactame</h3>
+                    <p> 
+                        Para contactarme te dejo los enlaces para que me mandes un mensaje por <span class="LinkedIn">LinkedIn</span> o <span class="WhatsApp">WhatsApp</span>, o 
+                        mandarme un correo por <span class="Gmail">Gmail</span>! 
+                    </p>
+                    </div>
+                    <div class="animate__animated animate__bounceInUp">
+                     <div class="social">
+                        <a href="https://www.linkedin.com/in/juan-pablo-botero-912b60241/" target="_blank" <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/+573227445547" target="_blank" <i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:boterojuan00@gmail.com" target="_blank" <i class="fa-solid fa-envelope"></i></a>
+                        
+                     
+                    </div>
+                </div>
+                </div>
+                <div class="right">
+                    <div class="profile">
+                        <img src="img/FOTOOO.PNG"  class="animate__animated animate__backInRight">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var menuButton = document.querySelector('.hamburger');
+        var menuList = document.querySelector('.list-darkmode-menu ul');
+
+        menuButton.addEventListener('click', function () {
+        // Alterna la visibilidad del menú al hacer clic en el botón
+        menuList.style.left = (menuList.style.left === '' || menuList.style.left === '-100%') ? '0%' : '-100%';
+    });
+});
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

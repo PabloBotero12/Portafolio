@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+    <style>
+        span {
+            color: #2742BB;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="">Mi <span>Portafolio</span></a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobremi.html">Sobre mi</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="contactame.html">Contacto</a></li>
+                    </ul>
+                    <label class="mode">
+                        <input type="checkbox" checked="checked" id="darkModeButton">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="left">
+                    <div class="animate__animated animate__backInLeft">
+                    <h3>Hola, soy</h3>
+                    <h1>Juan Pablo Botero</h1>
+                    <p> 
+                        residente de la vibrante ciudad de Medellín, Colombia, con 20 años de edad. Me <span>gradué de la técnica profesional en programación de sistemas en el Politécnico Colombiano Jaime Isaza Cadavid</span>.
+
+                        Durante mi formación técnica en bachillerato, di mis primeros pasos en el fascinante mundo de la programación. En la tecnica, amplié mis conocimientos creando páginas web y explorando el lenguaje Java. Además, llevé a cabo un proyecto donde <span>desarrollé y gestioné la base de datos de un local con oracle</span>.
+                        
+                        En mi experiencia laboral más reciente en Quipux SA, asumí el rol de Analista de TI. Mis responsabilidades incluyeron brindar <span>soporte de nivel 1</span> y <span>liderar dos proyectos de automatización utilizando Python para el área de TI y Gestión Humana</span>.
+                        
+                        Me caracterizo por mi <span>persistencia</span> en la consecución de objetivos. Este rasgo se ha reflejado tanto en mis proyectos académicos como en mis contribuciones en el entorno laboral. Estoy comprometido con la excelencia y siempre estoy dispuesto a enfrentar nuevos desafíos.
+                    </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="profile">
+                        <img id="profileImage" class="animate__animated animate__backInRight">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const imageList = [
+            'img/Graduado.jpeg',
+            'img/sobremi.jpeg',
+            'img/Codigo.jpg',
+            // Agrega más rutas de imágenes según sea necesario
+        ];
+
+        let currentImageIndex = 0;
+        const profileImage = document.getElementById('profileImage');
+
+        function changeImage() {
+            profileImage.src = imageList[currentImageIndex];
+            currentImageIndex = (currentImageIndex + 1) % imageList.length;
+            setTimeout(changeImage, 3000); // Cambia de imagen cada 3 segundos
+        }
+
+        // Inicia el carrusel
+        changeImage();
+
+        document.addEventListener('DOMContentLoaded', function () {
+        var menuButton = document.querySelector('.hamburger');
+        var menuList = document.querySelector('.list-darkmode-menu ul');
+
+        menuButton.addEventListener('click', function () {
+        // Alterna la visibilidad del menú al hacer clic en el botón
+        menuList.style.left = (menuList.style.left === '' || menuList.style.left === '-100%') ? '0%' : '-100%';
+    });
+});
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">Mi <span>Portafolio</span></a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobremi.html">Sobre mi</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="contactame.html">Contacto</a></li>
+                    </ul>
+                    <label class="mode">
+                        <input type="checkbox" checked="checked" id="darkModeButton">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="animate__animated animate__zoomInDown card-container">
+                    
+                    <div class="card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/5AOxj0P_YBg" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h3 class="card-title">Booklee</h3>
+                            <div class="lenguages">
+                                <i class="fa-brands fa-python" style="margin-right: 5px;"></i>
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <p class="card-text">Esta es una plataforma creada utilizando el framework de Flask en 
+                                conjunto con una base de datos MySQL. Diseñada para
+                                la experiencia óptima del usuario, ofrece una funcionalidad
+                                que permite la descarga de libros en formato PDF. la página incluye un 
+                                área de administración dedicada para 
+                                gestionar la colección de libros.</p>
+                            <div class="social">
+                                <a href="https://github.com/PabloBotero12/Booklee" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/zQyrhjEAqLs" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h3 class="card-title">ProgreShare</h3>
+                            <div class="lenguages">
+                                <i class="fa-brands fa-angular"></i>
+                                <i class="fa-brands fa-node-js"></i>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <p class="card-text">Esta plataforma, desarrollada con la tecnología MEAN Stack, 
+                                                está diseñada para ofrecer una experiencia óptima a los usuarios. 
+                                                Se presenta como una red social especialmente creada para programadores, 
+                                                brindando diversas funcionalidades para hacerla más completa y atractiva.
+                                                Como la creacion de publicaciones, busqueda de empleo y mensajeria.</p>
+                            <div class="social">
+                                <a href="https://github.com/PabloBotero12" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/WQuipux3.jpeg" style="width: 100%; height: 200px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Automatizaciones</h3>
+                            <div class="lenguages">
+                                <i class="fa-brands fa-python" style="margin-right: 5px;"></i>
+                            </div>
+                            <p class="card-text">
+                                En mis prácticas en la empresa Quipux SA, además de desempeñar mis funciones como Soporte, identifiqué la oportunidad de implementar automatizaciones utilizando Python para los departamentos de TI y Gestión Humana. En este contexto, asumí un rol protagónico al liderar dos proyectos significativos.
+                                
+                                En el primer proyecto, desarrollé una automatización con Selenium para extraer la temperatura de los UPS (Sistemas de Alimentación Ininterrumpida) y almacenarla diariamente en un archivo Excel, facilitando así la revisión diaria de este importante indicador.
+                                
+                                En el segundo proyecto, enfocado en el área de Gestión Humana, creé una solución automatizada que descargaba archivos PDF adjuntos en ciertos correos electrónicos, asignaba nombres específicos a los archivos y los almacenaba ordenadamente en una carpeta designada. Esta iniciativa contribuyó significativamente a mejorar la eficiencia y la organización en el manejo de la documentación relacionada con recursos humanos.
+                            </p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var menuButton = document.querySelector('.hamburger');
+        var menuList = document.querySelector('.list-darkmode-menu ul');
+
+        menuButton.addEventListener('click', function () {
+        // Alterna la visibilidad del menú al hacer clic en el botón
+        menuList.style.left = (menuList.style.left === '' || menuList.style.left === '-100%') ? '0%' : '-100%';
+    });
+});
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
